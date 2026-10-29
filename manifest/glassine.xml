@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Local manifest on top of minimal-manifest-twrp twrp-12.1: our recovery fork
+     and this device tree. For builds that fetch the sources (CI, once public). -->
+<manifest>
+  <remote name="glassine" fetch="https://github.com/GlassineOS" />
+  <remove-project name="android_bootable_recovery" />
+  <project path="bootable/recovery" name="android_bootable_recovery"
+           remote="glassine" revision="glassine/twrp-12.1" />
+  <project path="device/onyx/noteair" name="android_device_onyx_noteair"
+           remote="glassine" revision="main" />
+</manifest>

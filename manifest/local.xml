@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Local builds (build.sh): the recovery fork and this device tree come from
+     local clones mounted into the tree, so the sync only drops TeamWin's. -->
+<manifest>
+  <remove-project name="android_bootable_recovery" />
+</manifest>
