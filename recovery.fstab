@@ -1,6 +1,7 @@
-# Draft for the GlassineOS layout (Phase 18 §5.12). system_b is deliberately
-# absent: glassine-deploy owns its mounts (hibernate rule 8), so TWRP never
-# mounts it on its own and offers no wipe for it.
+# Draft for the GlassineOS layout. system_b is deliberately absent:
+# glassine-deploy owns its mounts (a hibernated session must be resumed or
+# invalidated before any read-write mount), so TWRP never mounts it on its own
+# and offers no wipe for it.
 #
 # mount point   fstype  device                               flags
 /boot           emmc    /dev/block/by-name/boot_b            flags=display="Boot (GlassineOS)"
